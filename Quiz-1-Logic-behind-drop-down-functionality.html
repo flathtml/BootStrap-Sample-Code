@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>HTML CSS Interview Question</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Playball|Righteous" rel="stylesheet">
+ 
+<style>
+.center {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid green;
+}
+
+ 
+</style>
+
+<body class="w3-container">
+</div> 
+  <div class="row">&nbsp;
+  </div>
+  
+  <div class="center flat-logo" style="background-color:#4dff4d"> 
+           
+     <h1><b>FlatHTML.com</b></h1>
+       
+          
+  </div> 
+  <div class="row">&nbsp;
+  </div>
+
+
+<div class="col-md-12 shadow p-4 mb-4 border border-primary" style="background-color:pink">
+         
+         
+<h2>HTML CSS Interview Question#1.</h2>
+<h6>The following piece of code displays a Nav bar.It has three buttons Dropdown1, Dropdown2 and Dropdown3. If one hovers on them, a drop down appears.
+What is the piece of code that provides the dropdown functionality?
+</h6>
+ </div>
+
+<div class="w3-panel w3-card w3-light-grey"> 
+ 
+  <div class="w3-code htmlHigh cssHigh notranslate">
+    1	&nbsp;	&lt;!DOCTYPE html&gt;	<br>
+2	&nbsp;	&lt;html&gt;	<br>
+3	&nbsp;	&lt;head&gt;	<br>
+4	&nbsp;	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;	<br>
+5	&nbsp;	&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;	<br>
+6	&nbsp;	&lt;style&gt;	<br>
+7	&nbsp;	body {margin:0;font-family:Arial}	<br>
+8	&nbsp;		<br>
+9	&nbsp;	.topnav {	<br>
+10	&nbsp;	  overflow: hidden;	<br>
+11	&nbsp;	  background-color: #333;	<br>
+12	&nbsp;	}	<br>
+13	&nbsp;		<br>
+14	&nbsp;	.topnav a {	<br>
+15	&nbsp;	  float: left;	<br>
+16	&nbsp;	  display: block;	<br>
+17	&nbsp;	  color: #f2f2f2;	<br>
+18	&nbsp;	  text-align: center;	<br>
+19	&nbsp;	  padding: 14px 16px;	<br>
+20	&nbsp;	  text-decoration: none;	<br>
+21	&nbsp;	  font-size: 17px;	<br>
+22	&nbsp;	}	<br>
+23	&nbsp;		<br>
+24	&nbsp;	.active {	<br>
+25	&nbsp;	  background-color: #4CAF50;	<br>
+26	&nbsp;	  color: white;	<br>
+27	&nbsp;	}	<br>
+28	&nbsp;		<br>
+29	&nbsp;	.topnav .icon {	<br>
+30	&nbsp;	  display: none;	<br>
+31	&nbsp;	}	<br>
+32	&nbsp;		<br>
+33	&nbsp;	.dropdown {	<br>
+34	&nbsp;	    float: left;	<br>
+35	&nbsp;	    overflow: hidden;	<br>
+36	&nbsp;	}	<br>
+37	&nbsp;		<br>
+38	&nbsp;	.dropdown .dropbtn {	<br>
+39	&nbsp;	    font-size: 17px;    	<br>
+40	&nbsp;	    border: none;	<br>
+41	&nbsp;	    outline: none;	<br>
+42	&nbsp;	    color: white;	<br>
+43	&nbsp;	    padding: 14px 16px;	<br>
+44	&nbsp;	    background-color: inherit;	<br>
+45	&nbsp;	    font-family: inherit;	<br>
+46	&nbsp;	    margin: 0;	<br>
+47	&nbsp;	}	<br>
+48	&nbsp;		<br>
+49	&nbsp;	.dropdown-content {	<br>
+50	&nbsp;	    display: none;	<br>
+51	&nbsp;	    position: absolute;	<br>
+52	&nbsp;	    background-color: #f9f9f9;	<br>
+53	&nbsp;	    min-width: 160px;	<br>
+54	&nbsp;	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	<br>
+55	&nbsp;	    z-index: 1;	<br>
+56	&nbsp;	}	<br>
+57	&nbsp;		<br>
+58	&nbsp;	.dropdown-content a {	<br>
+59	&nbsp;	    float: none;	<br>
+60	&nbsp;	    color: black;	<br>
+61	&nbsp;	    padding: 12px 16px;	<br>
+62	&nbsp;	    text-decoration: none;	<br>
+63	&nbsp;	    display: block;	<br>
+64	&nbsp;	    text-align: left;	<br>
+65	&nbsp;	}	<br>
+66	&nbsp;		<br>
+67	&nbsp;	.topnav a:hover, .dropdown:hover .dropbtn {	<br>
+68	&nbsp;	  background-color: yellow;	<br>
+69	&nbsp;	  color: red;	<br>
+70	&nbsp;	}	<br>
+71	&nbsp;		<br>
+72	&nbsp;	.dropdown-content a:hover {	<br>
+73	&nbsp;	    background-color: #ddd;	<br>
+74	&nbsp;	    color: black;	<br>
+75	&nbsp;	}	<br>
+76	&nbsp;		<br>
+77	&nbsp;	.dropdown:hover .dropdown-content {	<br>
+78	&nbsp;	    display: block;	<br>
+79	&nbsp;	}	<br>
+80	&nbsp;		<br>
+81	&nbsp;	@media screen and (max-width: 600px) {	<br>
+82	&nbsp;	  .topnav a:not(:first-child), .dropdown .dropbtn {	<br>
+83	&nbsp;	    display: none;	<br>
+84	&nbsp;	  }	<br>
+85	&nbsp;	  .topnav a.icon {	<br>
+86	&nbsp;	    float: right;	<br>
+87	&nbsp;	    display: block;	<br>
+88	&nbsp;	  }	<br>
+89	&nbsp;	}	<br>
+90	&nbsp;		<br>
+91	&nbsp;	@media screen and (max-width: 600px) {	<br>
+92	&nbsp;	  .topnav.responsive {position: relative;}	<br>
+93	&nbsp;	  .topnav.responsive .icon {	<br>
+94	&nbsp;	    position: absolute;	<br>
+95	&nbsp;	    right: 0;	<br>
+96	&nbsp;	    top: 0;	<br>
+97	&nbsp;	  }	<br>
+98	&nbsp;	  .topnav.responsive a {	<br>
+99	&nbsp;	    float: none;	<br>
+100	&nbsp;	    display: block;	<br>
+101	&nbsp;	    text-align: left;	<br>
+102	&nbsp;	  }	<br>
+103	&nbsp;	  .topnav.responsive .dropdown {float: none;}	<br>
+104	&nbsp;	  .topnav.responsive .dropdown-content {position: relative;}	<br>
+105	&nbsp;	  .topnav.responsive .dropdown .dropbtn {	<br>
+106	&nbsp;	    display: block;	<br>
+107	&nbsp;	    width: 100%;	<br>
+108	&nbsp;	    text-align: left;	<br>
+109	&nbsp;	  }	<br>
+110	&nbsp;	}	<br>
+111	&nbsp;	&lt;/style&gt;	<br>
+112	&nbsp;	&lt;/head&gt;	<br>
+113	&nbsp;	&lt;body&gt;	<br>
+114	&nbsp;		<br>
+115	&nbsp;	&lt;div class="topnav" id="myTopnav"&gt;	<br>
+116	&nbsp;	  	<br>
+117	&nbsp;	  &lt;div class="dropdown"&gt;	<br>
+118	&nbsp;	    &lt;button class="dropbtn"&gt;Dropdown1 	<br>
+119	&nbsp;	      &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;	<br>
+120	&nbsp;	    &lt;/button&gt;	<br>
+121	&nbsp;	    &lt;div class="dropdown-content"&gt;	<br>
+122	&nbsp;	      &lt;a href="#"&gt;Link 1&lt;/a&gt;	<br>
+123	&nbsp;	      &lt;a href="#"&gt;Link 2&lt;/a&gt;	<br>
+124	&nbsp;	      &lt;a href="#"&gt;Link 3&lt;/a&gt;	<br>
+125	&nbsp;	    &lt;/div&gt;	<br>
+126	&nbsp;	  &lt;/div&gt; 	<br>
+127	&nbsp;	  	<br>
+128	&nbsp;	  &lt;div class="dropdown"&gt;	<br>
+129	&nbsp;	    &lt;button class="dropbtn"&gt;Dropdown2 	<br>
+130	&nbsp;	      &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;	<br>
+131	&nbsp;	    &lt;/button&gt;	<br>
+132	&nbsp;	    &lt;div class="dropdown-content"&gt;	<br>
+133	&nbsp;	      &lt;a href="#"&gt;Link 1&lt;/a&gt;	<br>
+134	&nbsp;	      &lt;a href="#"&gt;Link 2&lt;/a&gt;	<br>
+135	&nbsp;	      &lt;a href="#"&gt;Link 3&lt;/a&gt;	<br>
+136	&nbsp;	    &lt;/div&gt;	<br>
+137	&nbsp;	  &lt;/div&gt; 	<br>
+138	&nbsp;	  	<br>
+139	&nbsp;	  &lt;div class="dropdown"&gt;	<br>
+140	&nbsp;	    &lt;button class="dropbtn"&gt;Dropdown3 	<br>
+141	&nbsp;	      &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;	<br>
+142	&nbsp;	    &lt;/button&gt;	<br>
+143	&nbsp;	    &lt;div class="dropdown-content"&gt;	<br>
+144	&nbsp;	      &lt;a href="#"&gt;Link 1&lt;/a&gt;	<br>
+145	&nbsp;	      &lt;a href="#"&gt;Link 2&lt;/a&gt;	<br>
+146	&nbsp;	      &lt;a href="#"&gt;Link 3&lt;/a&gt;	<br>
+147	&nbsp;	    &lt;/div&gt;	<br>
+148	&nbsp;	  &lt;/div&gt; 	<br>
+149	&nbsp;	 	<br>
+150	&nbsp;	&lt;/div&gt;	<br>
+151	&nbsp;		<br>
+152	&nbsp;	&lt;div style="padding-left:16px"&gt;	<br>
+153	&nbsp;	  &lt;h2&gt;Responsive Topnav with Dropdown&lt;/h2&gt;	<br>
+154	&nbsp;	  &lt;p&gt;Resize the browser window to see how it works.&lt;/p&gt;	<br>
+155	&nbsp;	  &lt;p&gt;Hover over the dropdown button to open the dropdown menu.&lt;/p&gt;	<br>
+156	&nbsp;	&lt;/div&gt;	<br>
+157	&nbsp;	&lt;script&gt;	<br>
+158	&nbsp;	function myFunction() {	<br>
+159	&nbsp;	    var x = document.getElementById("myTopnav");	<br>
+160	&nbsp;	    if (x.className === "topnav") {	<br>
+161	&nbsp;	        x.className += " responsive";	<br>
+162	&nbsp;	    } else {	<br>
+163	&nbsp;	        x.className = "topnav";	<br>
+164	&nbsp;	    }	<br>
+165	&nbsp;	}	<br>
+166	&nbsp;	&lt;/script&gt;	<br>
+167	&nbsp;	 	<br>
+168	&nbsp;		<br>
+169	&nbsp;	&lt;/body&gt;	<br>
+170	&nbsp;	&lt;/html&gt;	<br>
+
+     
+  </div>
+</div>
+
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+
+<script>
+w3CodeColor();
+</script>
+
+</body>
+</html>
